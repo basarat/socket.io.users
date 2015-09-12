@@ -1,8 +1,11 @@
 # socket.io.users
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/nodets/socket.io.users?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 This is a node js module for socket.io applications. This module finds and manages which socket is from who and visa versa.
 One user per person. User means: Unlimited (new) browser tabs/windows but same machine. OR client can pass custom authorized id and have one user with it's sockets per group of different machines.
 Make use of the middleware.
+
 
 ## Installation
 

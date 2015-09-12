@@ -170,7 +170,7 @@ declare module NodeJS {
         removeAllListeners(event?: string): EventEmitter;
         setMaxListeners(n: number): void;
         listeners(event: string): Function[];
-        _events:string[]; // by default node doesn't have this in def types, but some times we need this.
+        _events?:string[]; // by default node doesn't have this in def types, but some times we need this.
         emit(event: string, ...args: any[]): boolean;
     }
 
@@ -418,6 +418,7 @@ declare module "events" {
         removeAllListeners(event?: string): EventEmitter;
         setMaxListeners(n: number): void;
         listeners(event: string): Function[];
+        //_events:string[];
         emit(event: string, ...args: any[]): boolean;
    }
 }
